@@ -1,0 +1,541 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #E1FFEE;
+  text-align: center;
+}
+
+/* Nav bar text */
+li, a{
+  font-family: "Verdana";
+  font-weight: 500;
+  font-size: 16px;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 14px 16px;
+  position: relative;
+  top: 3px;
+
+}
+
+header{
+  background-color: #7FBCD2;
+  text-decoration: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.logo {
+  object-fit: scale-down;
+  max-width: 100%;
+  max-height:80px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: auto;
+  padding: 10px 30px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+}
+
+.nav__links li a {
+  transition:all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+  text-decoration: none;
+  border: solid 0px whitesmoke;
+  background-color: whitesmoke;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* Titles  */
+.help {
+  color: black;
+  position: relative;
+}
+
+h1 {
+color:black;
+text-align: left;
+font-size: 80px;
+position: absolute;
+padding: 20px;
+z-index: 21;
+width: 100%;
+height: 50%vh;
+background-color: #bac3e0; opacity: 60%;
+}
+
+p {
+  color: black;
+  font-family: "Verdana";
+  font-size: 18px;
+  padding: 5px 10px;
+  text-align: center;
+  margin: 10px;
+} 
+
+span {
+  font-size: 20px;
+}
+
+div {
+  text-align: center;
+  width: 100%;
+  max-height: 40rem;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.imgflip {
+  position: relative;
+  left: 8rem;
+  padding: 10rem 0px;
+
+}
+
+/* START OF PEGNUIN FACTS 1*/
+.first {
+	display: inline-block; 
+  position: relative;
+	width: 280px;
+	height: 350px;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.flip-card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease-in-out;
+	z-index: 1;
+}
+
+.flip-card .front,
+.flip-card .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: #D1FFEE;
+	backface-visibility: hidden;
+	border-radius: 0 20px 0 20px;
+}
+
+.flip-card .back {
+	transform: rotateX(180deg);
+	color: #000;
+	background: #D1FFEE;
+}
+
+label:hover .flip-card {
+	transform: rotateX(2deg);
+	box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2);
+}
+
+input {
+	display: none;
+}
+
+:checked + .flip-card {
+	transform: rotateX(180deg);
+}
+label:hover :checked + .flip-card {
+	transform: rotateX(175deg);
+	box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+.front img {
+  object-fit: cover;
+	width: 100%;
+	height: 100%;
+	margin: 30px 0 20px 0;
+	border-radius: 10%;
+}
+
+.front h1 {
+	font-size: 30px;
+	color: #499bef;
+	margin: 0;
+}
+.front h2 {
+	font-size: 18px;
+	color: #4e699d;
+	margin: 12px 0 12px 0;
+}
+
+.front b {
+	font-size: 14px;
+	color: #424752;
+	margin: 0 0 35px 0;
+	display: block;
+}
+
+.front p,
+.back .click {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.back h1 {
+	color: #424752;
+	margin: 30px 0 0 0;
+}
+
+hr {
+	width: 180px;
+	margin: 15px auto 10px auto;
+}
+
+.back p {
+	font-size: 16px;
+	color: #000;
+	padding: 0 18px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0 auto;
+}
+/* END OF PENGUIN FACTS 1*/
+/* START OF PENGUINS FACTS 2 */
+.second {
+	display: inline-block;
+  position: relative;
+	width: 280px;
+	height: 350px;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.flip-card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease-in-out;
+	z-index: 1;
+}
+
+.flip-card .front,
+.flip-card .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: #D1FFEE;
+	backface-visibility: hidden;
+	border-radius: 0 20px 0 20px;
+}
+
+.flip-card .back {
+	transform: rotateX(180deg);
+	color: #000;
+	background: #D1FFEE;
+}
+
+label:hover .flip-card {
+	transform: rotateX(2deg);
+	box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2);
+}
+
+input {
+	display: none;
+}
+
+:checked + .flip-card {
+	transform: rotateX(180deg);
+}
+label:hover :checked + .flip-card {
+	transform: rotateX(175deg);
+	box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+.front img {
+	width: 100%;
+	height: 100%;
+	margin: 30px 0 20px 0;
+	border-radius: 10%;
+}
+
+.front h1 {
+	font-size: 30px;
+	color: #499bef;
+	margin: 0;
+}
+.front h2 {
+	font-size: 18px;
+	color: #4e699d;
+	margin: 12px 0 12px 0;
+}
+
+.front b {
+	font-size: 14px;
+	color: #424752;
+	margin: 0 0 35px 0;
+	display: block;
+}
+
+.front p,
+.back .click {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.back h1 {
+	color: #424752;
+	margin: 30px 0 0 0;
+}
+
+hr {
+	width: 180px;
+	margin: 15px auto 10px auto;
+}
+
+.back p {
+	font-size: 16px;
+	color: #000;
+	padding: 0 18px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0 auto;
+}
+/* END OF PEGNUIN FACTS 2 */
+/* START OF PENGUIN FACTS 3 */
+.third {
+display: inline-block;
+/* 	position: absolute;
+  top: 68rem;
+  left: 48rem; */
+  position: relative;
+	width: 280px;
+	height: 350px;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.flip-card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease-in-out;
+	z-index: 1;
+}
+
+.flip-card .front,
+.flip-card .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: #D1FFEE;
+	backface-visibility: hidden;
+	border-radius: 0 20px 0 20px;
+}
+
+.flip-card .back {
+	transform: rotateX(180deg);
+	color: #000;
+	background: #D1FFEE;
+}
+
+label:hover .flip-card {
+	transform: rotateX(2deg);
+	box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2);
+}
+
+input {
+	display: none;
+}
+
+:checked + .flip-card {
+	transform: rotateX(180deg);
+}
+label:hover :checked + .flip-card {
+	transform: rotateX(175deg);
+	box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+.front img {
+	width: 100%;
+	height: 100%;
+	margin: 30px 0 20px 0;
+	border-radius: 10%;
+}
+
+.front h1 {
+	font-size: 30px;
+	color: #499bef;
+	margin: 0;
+}
+.front h2 {
+	font-size: 18px;
+	color: #4e699d;
+	margin: 12px 0 12px 0;
+}
+
+.front b {
+	font-size: 14px;
+	color: #424752;
+	margin: 0 0 35px 0;
+	display: block;
+}
+
+.front p,
+.back .click {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.back h1 {
+	color: #424752;
+	margin: 30px 0 0 0;
+}
+
+hr {
+	width: 180px;
+	margin: 15px auto 10px auto;
+}
+
+.back p {
+	font-size: 16px;
+	color: #000;
+	padding: 0 18px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0 auto;
+}
+/* END OF PENGUIN FACTS 3 */
+/* START OF PENGUINS FACTS 4 */
+.fourth {
+display: inline-block;
+/* 	position: absolute;
+  top: 68rem;
+  left: 66rem; */
+  position: relative;
+	width: 280px;
+	height: 350px;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.flip-card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease-in-out;
+	z-index: 1;
+}
+
+.flip-card .front,
+.flip-card .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: #D1FFEE;
+	backface-visibility: hidden;
+	border-radius: 0 20px 0 20px;
+}
+
+.flip-card .back {
+	transform: rotateX(180deg);
+	color: #000;
+	background: #D1FFEE;
+}
+
+label:hover .flip-card {
+	transform: rotateX(2deg);
+	box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2);
+}
+
+input {
+	display: none;
+}
+
+:checked + .flip-card {
+	transform: rotateX(180deg);
+}
+label:hover :checked + .flip-card {
+	transform: rotateX(175deg);
+	box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+.front img {
+	width: 100%;
+	height: 100%;
+	margin: 30px 0 20px 0;
+	border-radius: 10%;
+}
+
+.front h1 {
+	font-size: 30px;
+	color: #499bef;
+	margin: 0;
+}
+.front h2 {
+	font-size: 18px;
+	color: #4e699d;
+	margin: 12px 0 12px 0;
+}
+
+.front b {
+	font-size: 14px;
+	color: #424752;
+	margin: 0 0 35px 0;
+	display: block;
+}
+
+.front p,
+.back .click {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.back h1 {
+	color: #424752;
+	margin: 30px 0 0 0;
+}
+
+hr {
+	width: 180px;
+	margin: 15px auto 10px auto;
+}
+
+.back p {
+	font-size: 16px;
+	color: #000;
+	padding: 0 18px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0 auto;
+}
+/* END OF PENGUIN FACTS 4 */
+
+.card {
+        margin: 0 auto; 
+        float: none; 
+        margin-bottom: 10px; 
+}
